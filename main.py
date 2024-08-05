@@ -7,7 +7,7 @@ import sys
 from six.moves import range
 import numpy as np
 import nodes.camera.pct as camera3d
-import dscence
+import dscene
 
 
 
@@ -16,7 +16,7 @@ ys = 0
 zs = 1	
 	
 
-dscence.redraw
+dscene.redraw
 
 def main():
 
@@ -41,7 +41,7 @@ def main():
 	o.set_background( 1.0, 0, 0)
 	o.set_centerpoint(0, 0, 0)
 	glutInit( [] )
-	o.redraw = dscence.redraw
+	o.redraw = dscene.redraw
 	
 	quit = Button(f, text = 'Quit', command = sys.exit)
 	quit.pack({'side':'top', 'side':'left'})
